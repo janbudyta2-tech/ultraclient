@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UltraClient - Official Site</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+
+    <main class="shell">
+      <header class="top glass">
+        <div class="brand">
+          <img src="./logo-ultraclient.svg" alt="UltraClient logo" />
+          <div>
+            <h1>UltraClient</h1>
+            <p>Launcher Minecraft nowej generacji</p>
+          </div>
+        </div>
+        <a class="top-btn" href="https://discord.gg/EAnPPudBAF" target="_blank" rel="noreferrer">Discord</a>
+      </header>
+
+      <nav class="tabs glass" aria-label="Nawigacja strony">
+        <button class="tab active" data-tab="home">Glowna</button>
+        <button class="tab" data-tab="download">Download</button>
+        <button class="tab" data-tab="discord">Discord</button>
+        <button class="tab" data-tab="tutorial">Tutorial</button>
+      </nav>
+
+      <section class="panel active glass" id="panel-home">
+        <h2>UltraClient - opis projektu</h2>
+        <p>
+          UltraClient to launcher Minecraft z obsluga kont Microsoft, wieloma instancjami,
+          managerem modow i szybkim aktualizatorem. Celem projektu jest szybki start gry,
+          stabilnosc i nowoczesny wyglad bez zbednych krokow.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Wydajnosc</h3>
+            <p>Cache plikow, szybkie uruchamianie i wielowatkowe pobieranie.</p>
+          </article>
+          <article class="card">
+            <h3>Bezpieczenstwo</h3>
+            <p>Bezpieczne przechowywanie tokenow i walidacja danych.</p>
+          </article>
+          <article class="card">
+            <h3>Personalizacja</h3>
+            <p>Instancje, mody, shadery, resource packi i skiny dla konta.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel glass" id="panel-download">
+        <div class="panel-head">
+          <div>
+            <h2>Download</h2>
+            <p>Pobierz najnowszy setup UltraClient.</p>
+          </div>
+          <button id="refreshUpdates" class="ghost-btn">Odswiez</button>
+        </div>
+
+        <div id="downloadStatus" class="status">Ladowanie listy plikow...</div>
+        <div id="downloadList" class="download-list"></div>
+      </section>
+
+      <section class="panel glass" id="panel-discord">
+        <h2>Discord</h2>
+        <p>
+          Dolacz na oficjalny serwer UltraClient. Tam sa ogloszenia, support,
+          testy wersji i szybka pomoc techniczna.
+        </p>
+        <a class="cta" href="https://discord.gg/EAnPPudBAF" target="_blank" rel="noreferrer">Przejdz na Discord UltraClient</a>
+      </section>
+
+      <section class="panel glass" id="panel-tutorial">
+        <h2>Tutorial pomocniczy</h2>
+        <ol class="steps">
+          <li>
+            <strong>Pobierz setup</strong>
+            <span>Przejdz do zakladki Download i pobierz najnowszy plik setup.exe.</span>
+          </li>
+          <li>
+            <strong>Zainstaluj launcher</strong>
+            <span>Uruchom instalator i zakoncz proces instalacji.</span>
+          </li>
+          <li>
+            <strong>Zaloguj Microsoft</strong>
+            <span>W launcherze przejdz do zakladki Konta i zaloguj konto premium.</span>
+          </li>
+          <li>
+            <strong>Wybierz instancje i graj</strong>
+            <span>Utworz instancje, wybierz wersje gry i kliknij Start.</span>
+          </li>
+        </ol>
+      </section>
+
+      <footer class="foot">
+        <span>UltraClient</span>
+        <span>Official Ultra Client PAGE</span>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
